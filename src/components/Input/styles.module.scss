@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+%shrinkLabel {
+  top: -0.875rem;
+  font-size: 0.75rem;
+  color: $primary-color;
+}
+
+.input {
+  position: relative;
+  margin: 2.8125rem 0;
+
+  input {
+    border: none;
+    border-radius: 0;
+    font-weight: $light-weight;
+    border-bottom: $border solid $secondary-color;
+    padding: 0.625rem 0.625rem 0.625rem 0.3125rem;
+    background-color: $color-white;
+    font-size: 1.125rem;
+    margin: 1.5625rem 0;
+    display: block;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ label {
+      @extend %shrinkLabel;
+    }
+  }
+
+  input[type='password'] {
+    letter-spacing: 0.3em;
+  }
+
+  label {
+    color: $secondary-color;
+    pointer-events: none;
+    position: absolute;
+    left: 0.3125rem;
+    top: 0.625rem;
+
+    &.shrink {
+      @extend %shrinkLabel;
+    }
+  }
+}

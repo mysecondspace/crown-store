@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.button {
+  padding: 1rem 2rem;
+  letter-spacing: 0.0625rem;
+  transition: all $hover linear;
+  border: $border solid transparent;
+  background-color: $color-black;
+  text-transform: uppercase;
+  font-weight: $bold-weight;
+  color: $color-white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-white;
+    border-color: $color-black;
+    color: $color-black;
+  }
+}
+
+.google {
+  background-color: $color-blue;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $color-blue;
+    color: $color-blue;
+  }
+}
+
+.reversed {
+  background-color: $color-white;
+  border-color: $color-black;
+  color: $color-black;
+
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}

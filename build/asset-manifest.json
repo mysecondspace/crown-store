@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crown-store/build/static/css/main.f9f45e60.css",
+    "main.js": "/crown-store/build/static/js/main.33ba97ad.js",
+    "index.html": "/crown-store/build/index.html",
+    "static/media/crown.svg": "/crown-store/build/static/media/crown.9be034df05ce5aa7791260ee21d29cb5.svg",
+    "main.f9f45e60.css.map": "/crown-store/build/static/css/main.f9f45e60.css.map",
+    "main.33ba97ad.js.map": "/crown-store/build/static/js/main.33ba97ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9f45e60.css",
+    "static/js/main.33ba97ad.js"
+  ]
+}
