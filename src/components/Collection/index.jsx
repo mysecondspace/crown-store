@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Card from '../Card'
+import Category from '../Category'
 
 import styles from './styles.module.scss'
 
@@ -8,7 +8,7 @@ const Collection = ({ categories }) => {
   return (
     <div className={styles.collection}>
       {categories.map((category) => (
-        <Card category={category} key={category.id} />
+        <Category category={category} key={category.id} />
       ))}
     </div>
   )

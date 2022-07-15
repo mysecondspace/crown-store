@@ -1,0 +1,6 @@
+.shop {
+  display: grid;
+  gap: 3.125rem 0.625rem;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 3rem 1rem;
+}

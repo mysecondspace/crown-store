@@ -1,19 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Button from '../Button'
 
 import styles from './styles.module.scss'
 
-const Card = ({ category: { title, image } }) => {
+const Card = ({ product }) => {
+  const { name, price, image } = product
+
   return (
     <div className={styles.card}>
-      <div
-        className={styles.image}
-        style={{ backgroundImage: `url(${image})` }}
-      />
-      <div className={styles.container}>
-        <p>{title}</p>
-        <Link to='shop'>Shop Now</Link>
+      <img src={image} alt={`${name}`} />
+      <div className={styles.info}>
+        <span className={styles.name}>{name}</span>
+        <span className={styles.price}>${price}</span>
       </div>
+      <Button buttonType='reversed'>Add to card</Button>
     </div>
   )
 }

@@ -30,6 +30,7 @@ const Home = () => {
       image: 'https://i.ibb.co/R70vBrQ/men.png',
     },
   ]
+
   return (
     <>
       <Collection categories={categories} />
