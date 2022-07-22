@@ -39,8 +39,8 @@
 }
 
 .info {
-  display: flex;
-  align-items: end;
   font-size: 1.125rem;
   justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
 }

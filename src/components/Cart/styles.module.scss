@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.cart {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    font-weight: $bold-weight;
+    font-size: 0.625rem;
+    bottom: 0.125rem;
+  }
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
