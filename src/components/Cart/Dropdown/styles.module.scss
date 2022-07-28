@@ -13,22 +13,23 @@
   display: flex;
   z-index: 1;
 
-  span {
-    font-size: 1.125rem;
-    margin: 3.125rem auto;
-  }
-
   button {
     margin-top: auto;
   }
 }
 
 .container {
-  height: 15rem;
+  display: grid;
   overflow: scroll;
   scrollbar-width: none;
+  row-gap: 1rem;
 
   &::-webkit-scrollbar {
-    display: none; // Firefox
+    display: none;
   }
+}
+
+.empty {
+  font-size: 1.125rem;
+  margin: 3.125rem auto;
 }

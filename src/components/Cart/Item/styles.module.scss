@@ -1,0 +1,20 @@
+.item {
+  display: grid;
+  column-gap: 1rem;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2fr;
+
+  img {
+    width: 100%;
+    max-height: 3.75rem;
+    object-fit: cover;
+  }
+}
+
+.container {
+  display: grid;
+
+  p {
+    margin: 0;
+  }
+}

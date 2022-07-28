@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, useState, useEffect } from 'react'
 
 const addItem = (items, productToAdd) => {
   const existingItem = items.find((item) => item.id === productToAdd.id)
@@ -19,17 +19,25 @@ export const CartContext = createContext({
   setIsCartOpen: () => {},
   items: [],
   addItemToCart: () => {},
+  cartCount: 0,
 })
 
 export const CartProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false)
+  const [cartCount, setCartCount] = useState(0)
   const [items, setItems] = useState([])
+
+  useEffect(() => {
+    const newCartCount = items.reduce((total, item) => total + item.quantity, 0)
+
+    setCartCount(newCartCount)
+  }, [items])
 
   const addItemToCart = (productToAdd) => {
     setItems(addItem(items, productToAdd))
   }
 
-  const value = { isCartOpen, setIsCartOpen, addItemToCart, items }
+  const value = { isCartOpen, setIsCartOpen, addItemToCart, items, cartCount }
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 }
