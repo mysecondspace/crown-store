@@ -21,7 +21,7 @@ const Dropdown = () => {
       {items.length ? (
         <div className={styles.container}>
           {items.map((item) => (
-            <Item key={item.id} item={item} />
+            <Item item={item} key={item.id} />
           ))}
         </div>
       ) : (
