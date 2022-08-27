@@ -4,9 +4,9 @@ import Category from '../Category'
 
 import styles from './styles.module.scss'
 
-const Collection = ({ categories }) => {
+const Collections = ({ categories }) => {
   return (
-    <div className={styles.collection}>
+    <div className={styles.collections}>
       {categories.map((category) => (
         <Category category={category} key={category.id} />
       ))}
@@ -14,4 +14,4 @@ const Collection = ({ categories }) => {
   )
 }
 
-export default Collection
+export default Collections

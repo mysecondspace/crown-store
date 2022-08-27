@@ -12,7 +12,7 @@ const Category = ({ category: { title, image } }) => {
       />
       <div className={styles.container}>
         <p>{title}</p>
-        <Link to='shop'>Shop Now</Link>
+        <Link to={`shop/${title}`}>Shop Now</Link>
       </div>
     </div>
   )

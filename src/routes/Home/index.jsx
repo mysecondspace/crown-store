@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Collection from '../../components/Collection'
+import Collections from '../../components/Collections'
 
 const Home = () => {
   const categories = [
@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <>
-      <Collection categories={categories} />
+      <Collections categories={categories} />
     </>
   )
 }

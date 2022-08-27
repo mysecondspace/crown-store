@@ -1,0 +1,9 @@
+@import '/src/styles/variables.scss';
+
+.collections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: $container-width;
+  margin: 0 auto;
+}

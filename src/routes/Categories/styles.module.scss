@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+.categories {
+  display: grid;
+  row-gap: 3rem;
+  max-width: $container-width;
+  margin: 0 auto;
+}
