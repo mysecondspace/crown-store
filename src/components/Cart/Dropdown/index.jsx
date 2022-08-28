@@ -25,7 +25,7 @@ const Dropdown = () => {
           ))}
         </div>
       ) : (
-        <span className={styles.empty}>Empty</span>
+        <span className={styles.empty}>Your cart is empty</span>
       )}
       <Button onClick={goToCheckoutHandler}>Go to Checkout</Button>
     </div>
