@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/crown-store/build/static/css/main.78cfb6d9.css",
-    "main.js": "/crown-store/build/static/js/main.6d7324ea.js",
+    "main.js": "/crown-store/build/static/js/main.c7202d13.js",
     "static/media/bag-icon.svg": "/crown-store/build/static/media/bag-icon.3642e5e4697cdee98a13a1081c831105.svg",
     "index.html": "/crown-store/build/index.html",
     "static/media/crown.svg": "/crown-store/build/static/media/crown.9be034df05ce5aa7791260ee21d29cb5.svg",
     "main.78cfb6d9.css.map": "/crown-store/build/static/css/main.78cfb6d9.css.map",
-    "main.6d7324ea.js.map": "/crown-store/build/static/js/main.6d7324ea.js.map"
+    "main.c7202d13.js.map": "/crown-store/build/static/js/main.c7202d13.js.map"
   },
   "entrypoints": [
     "static/css/main.78cfb6d9.css",
-    "static/js/main.6d7324ea.js"
+    "static/js/main.c7202d13.js"
   ]
 }

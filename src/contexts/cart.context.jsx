@@ -71,7 +71,6 @@ const cartReducer = (state, action) => {
         ...state,
         isCartOpen: payload,
       }
-
     default:
       throw new Error(`Unhandled type ${type} in cartReducer`)
   }
