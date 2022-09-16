@@ -35,6 +35,7 @@ const firebaseConfig = {
 }
 
 // Initialize Firebase
+// eslint-disable-next-line
 const firebaseApp = initializeApp(firebaseConfig)
 
 const googleProvider = new GoogleAuthProvider()
@@ -64,6 +65,7 @@ export const addCollectionAndDocuments = async (
   })
 
   await batch.commit()
+
   console.log('done')
 }
 
@@ -71,15 +73,7 @@ export const getCollectionAndDocuments = async () => {
   const collectionRef = collection(db, 'categories')
   const querySnapshot = await getDocs(query(collectionRef))
 
-  const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
-    const { title, items } = docSnapshot.data()
-
-    acc[title.toLowerCase()] = items
-
-    return acc
-  }, {})
-
-  return categoryMap
+  return querySnapshot.docs.map((docSnapshot) => docSnapshot.data())
 }
 
 export const createUserDocumentFromAuth = async (
