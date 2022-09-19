@@ -3,8 +3,6 @@ import { Provider } from 'react-redux'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
-import { CartProvider } from './contexts/cart.context'
-
 import { store } from './store/store'
 
 import App from './App'
@@ -18,9 +16,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <CartProvider>
-          <App />
-        </CartProvider>
+        <App />
       </BrowserRouter>
     </Provider>
   </React.StrictMode>

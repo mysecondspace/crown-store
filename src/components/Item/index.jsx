@@ -1,19 +1,23 @@
 import React from 'react'
-import { useContext } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 
-import { CartContext } from '../../contexts/cart.context'
+import {
+  addItemToCart,
+  removeItemFromCart,
+  clearItemFromCart,
+} from '../../store/cart/cart.action'
+import { selectItems } from '../../store/cart/cart.selector'
 
 import styles from './styles.module.scss'
 
 const Item = ({ item }) => {
+  const dispatch = useDispatch()
+  const items = useSelector(selectItems)
   const { name, image, quantity, price } = item
 
-  const { addItemToCart, removeItemFromCart, clearItemFromCart } =
-    useContext(CartContext)
-
-  const addItemHandler = () => addItemToCart(item)
-  const removeItemHandler = () => removeItemFromCart(item)
-  const clearItemHandler = () => clearItemFromCart(item)
+  const addItemHandler = () => dispatch(addItemToCart(items, item))
+  const removeItemHandler = () => dispatch(removeItemFromCart(items, item))
+  const clearItemHandler = () => dispatch(clearItemFromCart(items, item))
 
   return (
     <div className={styles.item}>
