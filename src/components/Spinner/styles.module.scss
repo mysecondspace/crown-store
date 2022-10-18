@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/elements.scss';
 
 .spinner {
   width: 100%;
@@ -9,17 +10,7 @@
 }
 
 .container {
-  width: 3.125rem;
+  @extend %spinner;
   height: 3.125rem;
-  border-radius: 50%;
-  animation: spin 1s ease-in-out infinite;
-  border: 0.1875rem solid rgba(154, 154, 154, 0.5);
-  border-top-color: $secondary-color;
-  display: inline-block;
-
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
+  width: 3.125rem;
 }

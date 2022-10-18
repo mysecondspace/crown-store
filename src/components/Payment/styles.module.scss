@@ -1,0 +1,17 @@
+.payment {
+  display: flex;
+  height: 18.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: 6.25rem;
+  min-width: 31.25rem;
+
+  button {
+    margin-left: auto;
+    margin-top: 1.875rem;
+  }
+}

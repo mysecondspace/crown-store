@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addItemToCart } from '../../store/cart/cart.action'
 import { selectItems } from '../../store/cart/cart.selector'
 
-import Button from '../Button'
+import Button, { BUTTON_TYPES_CLASSES } from '../Button'
 
 import styles from './styles.module.scss'
 
@@ -20,7 +20,10 @@ const Card = ({ product }) => {
         <span className={styles.name}>{name}</span>
         <span className={styles.price}>${price}</span>
       </div>
-      <Button buttonType='reversed' onClick={addProductToCard}>
+      <Button
+        buttonType={BUTTON_TYPES_CLASSES.reversed}
+        onClick={addProductToCard}
+      >
         Add to card
       </Button>
     </div>

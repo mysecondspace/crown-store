@@ -3,18 +3,19 @@ import clsx from 'clsx'
 
 import styles from './styles.module.scss'
 
-const BUTTON_TYPES_CLASSES = {
+export const BUTTON_TYPES_CLASSES = {
   google: 'google',
   reversed: 'reversed',
 }
 
-const Button = ({ children, buttonType, ...otherProps }) => {
+const Button = ({ children, buttonType, isLoading, ...otherProps }) => {
   return (
     <button
       className={clsx(styles.button, styles[BUTTON_TYPES_CLASSES[buttonType]])}
+      disabled={isLoading}
       {...otherProps}
     >
-      {children}
+      {isLoading ? <span className={styles.spinner}></span> : children}
     </button>
   )
 }

@@ -1,0 +1,13 @@
+%spinner {
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+  border: 0.1875rem solid rgba(154, 154, 154, 0.5);
+  border-top-color: $secondary-color;
+  display: flex;
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

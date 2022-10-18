@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import { selectItems, selectTotal } from '../../store/cart/cart.selector'
 
 import Item from '../../components/Item'
+import Payment from '../../components/Payment'
 
 import styles from './styles.module.scss'
 
@@ -31,11 +32,10 @@ const Checkout = () => {
         </div>
       </div>
       {items.map((item) => (
-        <>
-          <Item item={item} key={item.id} />
-        </>
+        <Item item={item} key={item.id} />
       ))}
       <span className={styles.total}>Total: ${total}</span>
+      <Payment />
     </div>
   )
 }

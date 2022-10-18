@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+
+import { signUpStart } from '../../store/user/user.action'
 
 import Input from '../Input'
-import Button from '../Button'
+import Button, { BUTTON_TYPES_CLASSES } from '../Button'
 
 import styles from './styles.module.scss'
-import { useDispatch } from 'react-redux'
-import { signUpStart } from '../../store/user/user.action'
 
 const defaultFormFields = {
   name: '',
@@ -101,7 +102,7 @@ const SignUp = () => {
             required: true,
           }}
         />
-        <Button buttonType='reversed'>Sign up</Button>
+        <Button buttonType={BUTTON_TYPES_CLASSES.reversed}>Sign up</Button>
       </form>
     </div>
   )
