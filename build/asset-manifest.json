@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/crown-store/build/static/css/main.c294c6f5.css",
-    "main.js": "/crown-store/build/static/js/main.25e9410e.js",
+    "main.css": "/crown-store/build/static/css/main.df5ca556.css",
+    "main.js": "/crown-store/build/static/js/main.b4a539cd.js",
     "static/media/bag-icon.svg": "/crown-store/build/static/media/bag-icon.3642e5e4697cdee98a13a1081c831105.svg",
     "index.html": "/crown-store/build/index.html",
     "static/media/crown.svg": "/crown-store/build/static/media/crown.9be034df05ce5aa7791260ee21d29cb5.svg",
-    "main.c294c6f5.css.map": "/crown-store/build/static/css/main.c294c6f5.css.map",
-    "main.25e9410e.js.map": "/crown-store/build/static/js/main.25e9410e.js.map"
+    "main.df5ca556.css.map": "/crown-store/build/static/css/main.df5ca556.css.map",
+    "main.b4a539cd.js.map": "/crown-store/build/static/js/main.b4a539cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.c294c6f5.css",
-    "static/js/main.25e9410e.js"
+    "static/css/main.df5ca556.css",
+    "static/js/main.b4a539cd.js"
   ]
 }
