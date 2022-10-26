@@ -3,17 +3,20 @@
 
 .button {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   min-width: 10.3125rem;
   letter-spacing: 0.0625rem;
-  transition: all $hover linear;
+  transition: all $hover linear, padding 0s;
   border: $border solid transparent;
   background-color: $color-black;
   text-transform: uppercase;
   font-weight: $bold-weight;
   justify-content: center;
+  align-items: center;
   color: $color-white;
   cursor: pointer;
+  display: flex;
+  height: 3rem;
 
   &:hover {
     background-color: $color-white;
@@ -45,6 +48,6 @@
 
 .spinner {
   @extend %spinner;
-  height: 1.0625rem;
-  width: 1.0625rem;
+  height: 1.875rem;
+  width: 1.875rem;
 }
