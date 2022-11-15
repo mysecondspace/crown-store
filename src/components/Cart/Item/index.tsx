@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, memo } from 'react'
 
 import { Item as TItem } from '../../../store/cart/cart.types'
 
@@ -8,7 +8,7 @@ type ItemProps = {
   item: TItem
 }
 
-const Item: FC<ItemProps> = ({ item }) => {
+const Item: FC<ItemProps> = memo(({ item }) => {
   const { name, image, price, quantity } = item
 
   return (
@@ -22,6 +22,6 @@ const Item: FC<ItemProps> = ({ item }) => {
       </div>
     </div>
   )
-}
+})
 
 export default Item

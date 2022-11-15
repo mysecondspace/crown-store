@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, memo } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import {
@@ -15,7 +15,7 @@ type ItemProps = {
   item: TItem
 }
 
-const Item: FC<ItemProps> = ({ item }) => {
+const Item: FC<ItemProps> = memo(({ item }) => {
   const dispatch = useDispatch()
   const items = useSelector(selectItems)
   const { name, image, quantity, price } = item
@@ -45,6 +45,6 @@ const Item: FC<ItemProps> = ({ item }) => {
       </span>
     </div>
   )
-}
+})
 
 export default Item
