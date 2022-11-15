@@ -6,6 +6,8 @@ import { checkUserSession } from './store/user/user.action'
 
 import Spinner from './components/Spinner'
 
+import './app.scss'
+
 const Home = lazy(() => import('./routes/Home'))
 const Shop = lazy(() => import('./routes/Shop'))
 const Checkout = lazy(() => import('./routes/Checkout'))

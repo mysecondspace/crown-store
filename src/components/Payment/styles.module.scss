@@ -8,7 +8,10 @@
 
 .form {
   height: 6.25rem;
-  min-width: 31.25rem;
+
+  @media screen and (min-width: 799px) {
+    min-width: 31.25rem;
+  }
 
   button {
     margin-left: auto;

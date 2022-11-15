@@ -1,11 +1,14 @@
 @import '../../styles/variables.scss';
 
 .checkout {
-  width: 55%;
   align-items: center;
   flex-direction: column;
   margin: 3.125rem auto 0;
   display: flex;
+
+  @media screen and (min-width: 799px) {
+    width: 55%;
+  }
 }
 
 .header {

@@ -12,7 +12,9 @@
 }
 
 .image {
-  height: 16rem;
+  @media screen and (min-width: 799px) {
+    height: 16rem;
+  }
 
   img {
     width: 100%;

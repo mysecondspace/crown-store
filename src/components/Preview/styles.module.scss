@@ -15,6 +15,10 @@
 
 .container {
   display: grid;
-  column-gap: 1.25rem;
+  gap: 3rem 1.25rem;
   grid-template-columns: repeat(5, 1fr);
+
+  @media screen and (max-width: 798px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }

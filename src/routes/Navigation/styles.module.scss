@@ -8,6 +8,11 @@
   max-width: $container-width;
   padding: 1rem 3.5rem;
   margin: 0 auto 2rem;
+
+  @media screen and (max-width: 798px) {
+    margin-bottom: 1.25rem;
+    padding: 0.625rem;
+  }
 }
 
 .container {

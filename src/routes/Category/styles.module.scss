@@ -6,6 +6,10 @@
   max-width: $container-width;
   gap: 3rem 1.25rem;
   margin: 0 auto;
+
+  @media screen and (max-width: 798px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .title {

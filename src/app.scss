@@ -8,9 +8,12 @@
 }
 
 body {
-  margin: 0 0 3rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
+  @media screen and (min-width: 799px) {
+    margin: 0 0 3rem;
+  }
 }
 
 ul {
