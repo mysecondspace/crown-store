@@ -8,7 +8,9 @@
   margin: 0 auto;
 
   @media screen and (max-width: 798px) {
-    grid-template-columns: 1fr 1fr;
+    max-width: $container-width-mobile;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
   }
 }
 
